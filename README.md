@@ -41,13 +41,13 @@ The logic, contained within a single `always @(posedge clk)` block, handles the 
 ---
 ## 🚀 Simulation
 
-To test the design, you can use any standard Verilog simulator. The included `tb_sync_fifo.v` file will drive the inputs and verify the outputs.
+To test the design, you can use any standard Verilog simulator. The included `sync_fifo_tb.v` file will drive the inputs and verify the outputs.
 
 ### Example with Icarus Verilog:
 
 1.  **Compile the source files:**
     ```bash
-    iverilog -o sim_output.vvp sync_fifo.v tb_sync_fifo.v
+    iverilog -o sim_output.vvp sync_fifo.v sync_fifo_tb.v
     ```
 
 2.  **Run the compiled simulation:**

@@ -1,4 +1,3 @@
-// Ultra-minimal testbench for sync_fifo
 module tb_sync_fifo;
 
     reg clk=0, rst_n, winc, rinc;
@@ -11,7 +10,7 @@ module tb_sync_fifo;
     // Clock generator
     always #5 clk = ~clk;
 
-    // Minimal test sequence: write 'hAA', then read it.
+    // test sequence: write 'hAA', then read it.
     initial begin
         rst_n=0; #15; rst_n=1; // Reset the FIFO
 
